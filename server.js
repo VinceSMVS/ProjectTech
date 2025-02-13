@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path');
+const port = 3000;
 
 
 app.set("view engine", "ejs")
@@ -16,17 +17,14 @@ app.get('/about', (req, res) => {
 app.get('/login', (req, res) => {
     res.render("pages/login")
 })
-app.get('/form', (req, res) => {
-  res.render("pages/form")
+
+app.use((req, res) => {
+  res.status(404).render('pages/404');
+});
+
+app.listen(port, () => {
+  console.log(`port ${port} is actief`)
 })
 
-
-app.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
-  })
-
-app.listen(3000, () => {
-  console.log('server is actief')
-})
 
 

@@ -1,18 +1,24 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arrange header, main, footer in a column */
     min-height: 100vh; /* Ensure body takes up full viewport height */
-    margin: 0; /* Remove default body margins */
 }
-header{
+
+
+header {
     background-color: rgb(137, 137, 137);
 }
-main {
-    flex: 1; /* Allows main content to expand */
-    padding-left: 3rem;
-    padding-right: 3rem;
 
+main {
+    flex: 1; /* Key: Allow main to grow and take up available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
+
 footer{
     background-color: #333;
     color: white;
@@ -28,4 +34,24 @@ nav ul{
 nav a{
     color: #000000;
 
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    width: 20%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
 }
