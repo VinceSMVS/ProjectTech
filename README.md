@@ -23,9 +23,15 @@ fetchData("pt-studenten.json")
 ## GitHub basics
 ## HTTP en CLI
 ## Formulieren
-## Node.js en NPM
-## Express
-## Templating (EJS)
+De opdracht was om een formulier te maken met alleen HTML / CSS, dus geen JavaScript.
+
+## Node.js NPM Express & EJS
+Ik heb zelfstandig deze video gevolgd: [https://www.youtube.com/watch?v=SccSCuHhOw0](https://www.youtube.com/watch?v=SccSCuHhOw0). Dit leek mij handig omdat het express en EJS in 1 video behandelde. 
+
+Ik begon met het oefenen met het maken van routes en een 404. Nadat ik dit begrepen had ging ik aan de slag met wat EJS partials. Dit had ik vrij snel onder de knie en na dit gedaan te hebben kon ik verder met de variabelen dmv EJS dynamisch te maken. Uiteindelijk heb ik een formulier kunnen maken wat dynamisch de gebruikersnaam laat zien welke ingevoerd is in het formulier. 
+
+Ik wil nog verder oefenen met formulieren en een beter begrip krijgen van het opslaan van de JSON die aangemaakt wordt bij het aanmaken van een gebruiker.
+
 ## Formulieren met Node.js
 ## Concept
 ## MongoDB
