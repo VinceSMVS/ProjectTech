@@ -15,6 +15,7 @@ header {
 main {
     flex: 1; /* Key: Allow main to grow and take up available space */
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
@@ -54,4 +55,13 @@ input {
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
+}
+.registerBTNS{
+    margin-top: 1rem;
+}
+.registerBTNS button{
+    width: 9rem;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 1rem;
 }

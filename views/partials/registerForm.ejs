@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Register</h2>
+    <form id="loginForm" action="/users" method="'post">
+        <div class="username">
+            <label for="username">Username:</label>
+            <input type="text" id="username" minlength="7" maxlength="20" value="<%= locals.firstName %>" required>
+        </div>
+
+        <div class="password">
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="7" maxlength="20" placeholder="" required>
+        </div>
+
+        <div class="birthday">
+            <label for="birthday">Birthday:</label>
+            <input type="number" id="birthday" placeholder="00000000" required>
+        </div>
+
+        <div class="eyecolor">
+            <label for="eyecolor">Eyecolor:</label>
+            <input type="color" id="color">
+            <input type="text" id="colorText" placeholder="R, G, B" required>
+        </div>
+        <input type="submit" value ="submit"> </submit>
+    </form>
+</div>
