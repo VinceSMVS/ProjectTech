@@ -2,7 +2,7 @@
   "name": "pt",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
+  "scripts": { 
     "devStart": "nodemon server.js"
   },
   "author": "",
