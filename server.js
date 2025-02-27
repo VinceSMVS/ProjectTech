@@ -2,8 +2,27 @@ const express = require('express')
 const app = express()
 const path = require('path');
 const port = 3000;
+require('dotenv').config();
 
-//configuration
+const { MongoClient } = require("mongodb");
+// Replace the uri string with your MongoDB deployment's connection string.
+const uri = process.env.URI;
+const client = new MongoClient(uri);
+async function run() {
+  try {
+    await client.connect();
+    // database and collection code goes here
+    // find code goes here
+    // iterate code goes here
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
+run().catch(console.dir);
+
+
+
 app.set("view engine", "ejs")
 app.use(express.static('public'))
 app.use(express.urlencoded({ extendend: true })) //dit is middelware om te zorgen dat ik informatie van forms kan ophalen.
@@ -47,6 +66,4 @@ app.use((req, res) => {
 app.listen(port, () => {
   console.log(`port ${port} is actief`)
 })
-
-
 
